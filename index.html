@@ -3,7 +3,8 @@
     <style>
       a.badge {
         margin-top: 1em;
-        width: 40%;
+        justify-content: center;
+        width: 50%;
       }
 
       a.button {
@@ -14,6 +15,7 @@
 
       body {
         background-image: linear-gradient(rgb(80, 80, 80), rgb(40, 40, 40));
+        margin: 0;
       }
 
       div {
@@ -23,27 +25,38 @@
         margin-top: 1em;
       }
 
-      div.content {
-        display: flex;
+      div.column {
+        flex: 1;
         flex-direction: column;
-        width: 100%;
+        margin: 0
+      }
+
+      div.columns {
+        display: flex;
+        margin: 0;
+      }
+
+      div.gutter {
+        width: 20%;
       }
 
       div.socials {
         display: flex;
         justify-content: space-around;
         margin-bottom: 1em;
-        width: 65%;
-      }
-
-      img.banner {
-          max-width: 100%;
-          max-height: 100%;
+        margin-top: 1em;
+        width: 75%;
       }
 
       img.badge {
         width: 100%;
         height: auto;
+      }
+
+      img.banner {
+        margin-bottom: 2em;
+        max-width: 100%;
+        max-height: 100%;
       }
 
       img.button {
@@ -56,39 +69,42 @@
     </title>
   </head>
   <body>
-    <div class="content">
-      <img class="banner" src="banner.png" alt="Suges.com" />
+    <div class="columns">
+      <div class="gutter"></div>
+      <div class="column">
+        <img class="banner" src="banner.png" alt="Suges.com" />
 
-      <a class="badge" href="https://music.apple.com/artist/suges/422559022?itscg=30200&itsct=music_box_badge&ls=1&app=music&mttnsubad=422559022" style="display: inline-block;">
-        <img class="badge" src="https://toolbox.marketingtools.apple.com/api/v2/badges/listen-on-apple-music/badge/en-us" alt="Listen on Apple Music" />
-      </a>
-
-      <a class="badge" href="https://open.spotify.com/artist/3K6B39NLyTjWLImzaT47Gq?si=drHBGCh0S7K4W8KHGbpDlw" style="display: inline-block;">
-        <img class="badge" src="spotify.png" alt="Listen on Spotify" />
-      </a>
-
-      <a class="badge" href="https://suges.bandcamp.com">
-        <img class="badge" src="bandcamp.png" alt="Listen/buy on Bandcamp" />
-      </a>
-
-      <a class="badge" href="https://www.traxsource.com/artist/1516/suges">
-        <img class="badge" src="traxsource.png" alt="Buy on Traxsource" />
-      </a>
-
-      <a class="badge" href="https://www.beatport.com/artist/suges/18622">
-        <img class="badge" src="beatport.png" alt="Buy on Beatport" />
-      </a>
-
-      <div class="socials">
-        <a class="button" href="https://www.facebook.com/suges">
-          <img class="button" src="facebook.png" alt="Follow on Facebook" />
+        <a class="badge" href="https://music.apple.com/artist/suges/422559022?itscg=30200&itsct=music_box_badge&ls=1&app=music&mttnsubad=422559022" style="display: inline-block;">
+          <img class="badge" src="https://toolbox.marketingtools.apple.com/api/v2/badges/listen-on-apple-music/badge/en-us" alt="Listen on Apple Music" />
         </a>
 
-        <a class="button" href="http://instagram.com/suggiesuges">
-          <img class="button" src="instagram.png" alt="Follow on Instagram" />
+        <a class="badge" href="https://open.spotify.com/artist/3K6B39NLyTjWLImzaT47Gq?si=drHBGCh0S7K4W8KHGbpDlw" style="display: inline-block;">
+          <img class="badge" src="spotify.png" alt="Listen on Spotify" />
         </a>
+
+        <a class="badge" href="https://suges.bandcamp.com">
+          <img class="badge" src="bandcamp.png" alt="Listen/buy on Bandcamp" />
+        </a>
+
+        <a class="badge" href="https://www.traxsource.com/artist/1516/suges">
+          <img class="badge" src="traxsource.png" alt="Buy on Traxsource" />
+        </a>
+
+        <a class="badge" href="https://www.beatport.com/artist/suges/18622">
+          <img class="badge" src="beatport.png" alt="Buy on Beatport" />
+        </a>
+
+        <div class="socials">
+          <a class="button" href="https://www.facebook.com/suges">
+            <img class="button" src="facebook.png" alt="Follow on Facebook" />
+          </a>
+
+          <a class="button" href="http://instagram.com/suggiesuges">
+            <img class="button" src="instagram.png" alt="Follow on Instagram" />
+          </a>
+        </div>
       </div>
-
+      <div class="gutter"></div>
     </div>
   </body>
 </html>
